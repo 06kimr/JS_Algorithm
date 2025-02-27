@@ -10,5 +10,6 @@ rl.on("line", function (line) {
 }).on("close", function () {
   //콘솔 입력 창에서 Ctrl + C를 입력하면 호출(입력의 종료)
   console.log(input);
+  //['Hello', 'World', 'JS']
   process.exit();
 });
