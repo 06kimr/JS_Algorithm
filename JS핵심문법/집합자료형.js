@@ -7,3 +7,4 @@ mySet.add(9); // Set(4) { 1, 5, 7, 9 }
 
 mySet.delete(9); // Set(3) {1, 5, 7}
 for (let item of mySet) console.log(item); // 1, 5, 7
+``
