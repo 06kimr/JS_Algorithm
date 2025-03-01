@@ -5,12 +5,16 @@ let n = Number(input[0]);
 
 let arr = input[1].split(" ").map(Number);
 
-let maxValue = 1000001
-let minValue = -1000001
+let maxValue = 1000001;
+let minValue = -1000001;
 
-for(let i= 0; i < n; i++){
-  if(maxValue > arr[i]) minValue = arr[i]
-  if(minValue < arr[i]) maxValue = arr[i]
+for (let i = 0; i < n; i++) {
+  if (maxValue > arr[i]) minValue = arr[i];
+  if (minValue < arr[i]) maxValue = arr[i];
 }
 
-console.log(minValue + " " + maxValue )
+console.log(minValue + " " + maxValue);
+
+//reduce를 사용
+let minValueNew = data.reduce((a, b) => Math.min(a, b));
+let maxValueNew = data.reduce((a, b) => Math.max(a, b));
